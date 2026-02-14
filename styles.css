@@ -210,7 +210,7 @@ img{
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    min-height: 70vh; /* not full screen */
+    min-height: auto; /* not full screen */
 }
 .home__data{
   flex: 1;
@@ -460,22 +460,42 @@ margin-top: 80px;
 
 
 /* ===== MY WORK =====*/
-.work__container{
-  row-gap: 2rem;
-}
-.work__img{
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
-  border-radius: .5rem;
+.project-card{
+  background: white;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .3s ease;
 }
-.work__img img{
-  transition: 1s;
-  cursor: pointer;
-  height: 250px;
-  width: 350px;
+
+.project-card:hover{
+  transform: translateY(-6px);
 }
-.work__img img:hover{
-  transform: scale(1.1);
+
+.project-card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info{
+  padding: 16px;
+  text-align: center;
+}
+
+.project-info h3{
+  margin-bottom: 8px;
+  color: var(--first-color);
+}
+
+.project-info p{
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.work__container{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 /* ===== CONTACT =====*/
@@ -607,6 +627,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
