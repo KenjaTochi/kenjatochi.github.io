@@ -206,12 +206,12 @@ img{
 
 /*===== HOME =====*/
 
-.home{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  height: auto;
-  padding-top: 120px;
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
 }
 .home__data{
   align-self: center;
@@ -611,6 +611,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
