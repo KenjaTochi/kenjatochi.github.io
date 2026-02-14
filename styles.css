@@ -112,6 +112,9 @@ img{
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
   width: calc(100% - 2rem);
   margin-left: auto;
   margin-right: auto;
@@ -242,7 +245,7 @@ img{
 }
 
 .home__img img{
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   height: auto;
   transition: transform .3s ease;
@@ -254,16 +257,6 @@ img{
 
 .home__img img:hover{
   transform: scale(1.15);
-}
-.home__img::before{
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: var(--first-color);
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.12;
 }
 
 /*BUTTONS*/
@@ -551,9 +544,11 @@ margin-top: 80px;
     color: var(--second-color);
   }
 
-  .home{
-    height: 100vh;
-  }
+.home {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 100vh;
+}
   .home__data{
     align-self: flex-end;
   }
@@ -608,6 +603,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
