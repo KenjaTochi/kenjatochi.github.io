@@ -110,29 +110,32 @@
             </div>
             <p>&#169; 2026 copyright all rights reserved</p>
         </footer>
-        <script>
+<script>
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav__link");
 
 window.addEventListener("scroll", () => {
   let current = "";
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    const sectionHeight = section.clientHeight;
+  const middle = window.scrollY + window.innerHeight / 2;
 
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
+  sections.forEach(section => {
+    const top = section.offsetTop;
+    const bottom = top + section.offsetHeight;
+
+    if (middle >= top && middle <= bottom) {
+      current = section.id;
     }
   });
 
   navLinks.forEach(link => {
     link.classList.remove("active");
-    if(link.getAttribute("href").includes(current)){
+    if (link.getAttribute("href").includes(current)) {
       link.classList.add("active");
     }
   });
 });
 </script>
+
     </body>
 </html>
