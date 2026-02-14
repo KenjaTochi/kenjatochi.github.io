@@ -1,161 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
 
-        <title>My Portfolio Website</title>
-    </head>
-    <body>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
 
-         <!-- HEADER -->
-         <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Welcome!</a>
-                </div>
+<body>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#mywork" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+<!-- HEADER -->
+<header class="l-header">
+  <nav class="nav bd-grid">
+    <a href="#" class="nav__logo">Welcome!</a>
 
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Ethan Cox<br><span class="home__title-color">Professional Portfolio</span>
-                    </h1>
-
-                    <a href="#contact" class="button">Contact Me</a>
-                </div>
-
-                <div class="home__img">   
-                    <img src="images/portfolio.jpg" alt="EC">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-                <div class="about__container bd-grid">
-                    <div>
-                        <p class="about__text">Hi, I’m a computer science major who loves to explore new and emerging technologies. I enjoy applying my skills to create practical and creative solutions for real-world problems. My goal is to pursue a career in computer science that allows me to combine my technical skills with my entrepreneurial spirit. I am always eager to learn new things and challenge myself. I am also open to new opportunities and collaborations.
-                        </p>
-                        <br>
-                        <p class="quote">
-  “Sometimes you don’t know when you’re taking the first step through a door until you’re already inside.”
-  <br>— Ann Voskamp
-</p>
-
-                    </div>                                   
-                </div>
-            </section>
-            
-            <!--===== Projects =====-->
-            <section class="work section" id="mywork">
-                <h2 class="section-title">Projects</h2>
-
-<div class="work__container bd-grid">
-
-  <div class="project-card">
-    <img src="images/1.jpg" alt="">
-    <div class="project-info">
-      <h3>Project Title</h3>
-      <p>Short description about what this project does.</p>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#mywork" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+</header>
+
+<main class="l-main">
+
+<!-- HOME -->
+<section class="home" id="home">
+  <div class="home__data">
+    <h1 class="home__title">
+      Ethan Cox<br>
+      <span class="home__title-color">Professional Portfolio</span>
+    </h1>
+
+    <a href="#contact" class="button">Contact Me</a>
   </div>
 
-  <div class="project-card">
-    <img src="images/2.jpg" alt="">
-    <div class="project-info">
-      <h3>Project Title</h3>
-      <p>Short description about what this project does.</p>
+  <div class="home__img">
+    <img src="images/portfolio.jpg" alt="Ethan Cox">
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <h2 class="section-title">About</h2>
+
+  <div class="about__container bd-grid">
+    <p class="about__text">
+      Hi, I’m a Computer Science major who enjoys exploring emerging
+      technologies and building practical solutions to real-world
+      problems. I’m especially interested in combining technical
+      skills with entrepreneurship, and I’m always looking for
+      opportunities to learn, collaborate, and grow.
+    </p>
+
+    <p class="quote">
+      “Sometimes you don’t know when you’re taking the first step
+      through a door until you’re already inside.”
+      <br>— Ann Voskamp
+    </p>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section class="work section" id="mywork">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="work__container bd-grid">
+
+    <div class="project-card">
+      <img src="images/portfolio.jpg" alt="Portfolio Website">
+      <div class="project-info">
+        <h3>Portfolio Website <span class="project-year">2026</span></h3>
+        <p>Personal site showcasing projects, skills, and contact info.</p>
+      </div>
     </div>
+
+    <div class="project-card">
+      <img src="images/1.jpg" alt="Arms Race Game">
+      <div class="project-info">
+        <h3>Arms Race <span class="project-year">2025</span></h3>
+        <p>2D Smash-style fighter with UI systems and playable maps.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/2.jpg" alt="DustBlade Game">
+      <div class="project-info">
+        <h3>DustBlade <span class="project-year">2025</span></h3>
+        <p>Top-down survival game featuring enemy AI and leveling.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/3.jpg" alt="Shopping Website">
+      <div class="project-info">
+        <h3>Shopping Website <span class="project-year">2025</span></h3>
+        <p>Node.js storefront with search, filters, and shopping cart.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/4.jpg" alt="3D Printing Projects">
+      <div class="project-info">
+        <h3>Cox 3D Prints <span class="project-year">2024</span></h3>
+        <p>Designed Blender models and printed custom school projects.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/drone.jpg" alt="Drone Flying">
+      <div class="project-info">
+        <h3>Drone Flying <span class="project-year">2024</span></h3>
+        <p>Recreational flying focused on aerial photography practice.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="home__social">
+    <a href="https://www.linkedin.com/in/ethan-hr-cox/" target="_blank" class="home__social-icon">
+      <i class="bx bxl-linkedin"></i>
+    </a>
+
+    <a href="https://www.cox3dprints.com/" target="_blank" class="home__social-icon">
+      <i class="bx bxs-business"></i>
+    </a>
+
+    <a href="https://github.com/KenjaTochi" target="_blank" class="home__social-icon">
+      <i class="bx bxl-github"></i>
+    </a>
   </div>
 
-  <div class="project-card">
-    <img src="images/3.jpg" alt="">
-    <div class="project-info">
-      <h3>Project Title</h3>
-      <p>Short description about what this project does.</p>
-    </div>
+  <div class="contact__container bd-grid">
+    <form class="contact__form">
+      <input type="text" placeholder="Name" class="contact__input">
+      <input type="email" placeholder="Email" class="contact__input">
+      <textarea placeholder="Message" rows="8" class="contact__input"></textarea>
+      <input type="submit" value="Send" class="contact__button button">
+    </form>
   </div>
+</section>
 
-  <div class="project-card">
-    <img src="images/4.jpg" alt="">
-    <div class="project-info">
-      <h3>Project Title</h3>
-      <p>Short description about what this project does.</p>
-    </div>
-  </div>
-    
-  <div class="project-card">
-    <img src="images/4.jpg" alt="">
-    <div class="project-info">
-      <h3>Project Title</h3>
-      <p>Short description about what this project does.</p>
-    </div>
-  </div>
-    
-  <div class="project-card">
-    <img src="images/4.jpg" alt="">
-    <div class="project-info">
-      <h3>Project Title</h3>
-      <p>Short description about what this project does.</p>
-    </div>
-  </div>
+</main>
 
-</div>
 
-            </section>
+<!-- FOOTER -->
+<footer class="footer">
+  <p class="footer__title">GitHub Pages</p>
+  <p>© 2026 All rights reserved</p>
+</footer>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact Me</h2>
 
-                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/ethan-hr-cox/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.cox3dprints.com/" target="_blank" class="home__social-icon"><i class='bx bxs-business' ></i></a>
-                    <a href="https://github.com/KenjaTochi" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-
-                </div>
-
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">GitHub Pages</p>
-            <div class="footer__social">
-            </div>
-            <p>&#169; 2026 copyright all rights reserved</p>
-        </footer>
+<!-- NAV ACTIVE SCROLL SCRIPT -->
 <script>
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav__link");
 
 window.addEventListener("scroll", () => {
   let current = "";
-
   const middle = window.scrollY + window.innerHeight / 2;
 
   sections.forEach(section => {
@@ -176,5 +191,5 @@ window.addEventListener("scroll", () => {
 });
 </script>
 
-    </body>
+</body>
 </html>
