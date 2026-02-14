@@ -112,13 +112,9 @@ img{
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-column-gap: 2rem;
   width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
-
+  margin-left: auto;
+  margin-right: auto;
 }
 .l-header{
   width: 100%;
@@ -207,10 +203,10 @@ img{
 /*===== HOME =====*/
 
 .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 3rem;
     min-height: 100vh;
 }
 .home__data{
@@ -246,7 +242,8 @@ img{
 }
 
 .home__img img{
-  width: 380px;
+  max-width: 300px;
+  width: 100%;
   height: auto;
   transition: transform .3s ease;
 }
@@ -611,6 +608,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
