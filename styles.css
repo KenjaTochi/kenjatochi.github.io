@@ -291,18 +291,18 @@ img{
 }
 .quote{
   margin-top: 20px;
+  text-align: justify;
   font-style: italic;
   opacity: .8;
 }
 .about__text{
-  text-align: left;
+  text-align: justify;
   color: #444;
   line-height: 1.6;
 }
 .about__container{
   max-width: 700px;
   margin: auto;
-  text-align: center;
 }
 .about__subtitle{
   margin-bottom: var(--mb-2);
@@ -533,6 +533,7 @@ margin-top: 80px;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  margin-top: auto;
 }
 .footer__title{
   font-size: 2rem;
@@ -599,7 +600,6 @@ margin-top: 80px;
 .about__container {
   max-width: 800px;
   margin: auto;
-  text-align: center;
 }
   .about__img img{
     width: 300px;
@@ -635,19 +635,3 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
