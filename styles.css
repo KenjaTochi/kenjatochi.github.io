@@ -568,11 +568,11 @@ margin-top: 80px;
     color: var(--second-color);
   }
 
-  .about__container, .skills__container{
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    text-align: initial;
-  }
+.about__container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
   .about__img img{
     width: 300px;
   }
@@ -607,6 +607,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
