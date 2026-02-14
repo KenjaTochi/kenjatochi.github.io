@@ -545,9 +545,11 @@ margin-top: 80px;
   }
 
 .home {
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    min-height: 100vh;
 }
   .home__data{
     align-self: flex-end;
@@ -603,6 +605,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
