@@ -303,7 +303,7 @@ img{
 .about__container{
   max-width: 700px;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 .about__subtitle{
   margin-bottom: var(--mb-2);
@@ -503,7 +503,7 @@ margin-top: 80px;
 }
 
 .work__container{
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -606,7 +606,7 @@ margin-top: 80px;
     width: 300px;
   }
   .work__container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
   }
@@ -636,6 +636,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
