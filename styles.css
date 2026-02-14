@@ -267,6 +267,7 @@ img{
 /*BUTTONS*/
 .button{
   background-color: var(--first-color);
+  color: white;
   padding: 14px 32px;
   border-radius: 50px;
   transition: .3s ease;
