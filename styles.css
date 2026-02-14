@@ -548,16 +548,7 @@ margin-top: 80px;
   .nav__link{
     color: var(--second-color);
   }
-
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    min-height: 100vh;
-}
   .home__data{
-    align-self: flex-end;
   }
   .home__social{
     padding-top: 0;
@@ -610,6 +601,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
