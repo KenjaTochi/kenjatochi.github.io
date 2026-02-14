@@ -209,11 +209,16 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
-    min-height: 100vh;
+    gap: 4rem;
+    min-height: 70vh; /* not full screen */
 }
 .home__data{
-  align-self: center;
+  flex: 1;
+}
+.home__img{
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 .home__title{
   font-size: var(--big-font-size);
@@ -605,6 +610,7 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
 
 
 
