@@ -505,6 +505,12 @@ margin-top: 80px;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+.project-year{
+  font-style: italic;
+  opacity: .75;
+  font-size: 0.85rem;
+  margin-left: 8px;
+}
 
 /* ===== CONTACT =====*/
 .contact__input{
@@ -635,3 +641,4 @@ margin-top: 80px;
     .button{
       flex: 1 0 50px;
     }
+
